@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>ajax</title>
+<script type = "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+</head>
+<body>
+ 	<p id= "p1">se muestra al cargar el dom: </p>
+ 	<p id= "p2">se muestra al clicar aqui: </p>
+
+ 	 <script type="text/javascript" charset="utf-8">
+ 	 		$(document).ready(function(){
+ 	 			$.ajax({
+ 	 				url: "hola.txt",
+ 	 				context: document.body
+ 	 			}).done(function(text){
+ 	 				$("#p1").append(text);
+ 	 			})
+ 	 		})
+ 	 		$(function(){
+ 	 			$("#p2").click(function(){
+ 	 				$.ajax({
+ 	 					url: "hola.txt",
+ 	 					context: document.body
+ 	 				}).done(function(text){
+ 	 					$("#p2").append(text);
+ 	 				})
+ 	 			})
+ 	 		})
+ 	 </script>
+</body>
+</html>
