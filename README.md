@@ -9,4 +9,4 @@ Realiza lo mismo, pero ahora de forma que la petición del documento se realice 
 
 ## ejecuta el ejercicio
 
-http://dreciov.github.io/X-Nav-JQ-Ajax
+http://dreciov.github.io/X-NAV-JQ-Ajax
